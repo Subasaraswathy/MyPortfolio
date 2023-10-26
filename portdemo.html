@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="portdemo.css">
+</head>
+
+<body>
+    <header>
+        <div class="header-content">
+            <img src="m21.jpeg" alt=" Image Error" class="profile-picture">
+            <h2 style="color: white ; font-size:30px">SUBASARASWATHY K</h2>
+            <h1> Student </h1>
+        </div>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="#home">Home  &nbsp; </a> | </li>
+            <li><a href="#about">About &nbsp; |</a></li>
+            <li><a href="#education">Education &nbsp; | </a></li>
+            <li><a href="#skills">Skills &nbsp; | </a></li>
+            <li><a href="#contact">Contact &nbsp; | </a></li>
+        </ul>
+    </nav>
+
+    <div class="section" id="home">
+        <div>
+            <h1 style="color: green; font-size:35px ; margin-left:12cm">Hello! Welcome to my Portfolio...</h1>
+        </div>
+    </div>
+    <section id="about">
+        <div class="section-content">
+            <h2>About Me</h2>
+            <p> I'm a BCA student at Jawahar Science College in Neyveli. </p>
+        </div>
+    </section>
+
+    <section id="education">
+        <div class="section-content">
+            <h2>Education</h2>
+            <p> College &nbsp; <b>:</b> &nbsp; Jawahar Science College.<br> university &nbsp; <b>:</b> &nbsp; Annamalai University. <br> Degree Studying &nbsp; <b>:</b> &nbsp; Bachelor of Computer Application [BCA] . </p>
+        </div>
+    </section>
+
+    <section id="skills">
+        <div class="section-content">
+            <h2>Skills</h2>
+            <ul>PROGRAMMING LANGUAGES KNOWN <b>...</b> <br>
+                <hr>
+                <li> C &nbsp;<b>,</b> &nbsp; C++ </li>
+                <li> Java </li>
+                <li>RDBMS </li>
+                <li> Mobile Application Development </li>
+                <li> HTML </li>
+                <li> CSS </li>
+                <li> JavaScript </li>
+            </ul>
+        </div>
+    </section>
+
+    <section id="contact">
+        <div class="section-content">
+            <h2> Contact in </h2>
+            <p> <a href="mailto:subasaraswathykuppusamy&amp;@gmail.com">subasaraswathykuppusamy@gmail.com</a> </p>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2023 SUBASARASWATHY K</p>
+    </footer>
+
+    <script>
+        //  scrolling nav
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function(e) {
+                e.preventDefault();
+
+                const targetId = this.getAttribute('href').substring(1);
+                const targetElement = document.getElementById(targetId);
+
+                if (targetElement) {
+                    window.scrollTo({
+                        top: targetElement.offsetTop,
+                        behavior: 'smooth'
+                    });
+                }
+            });
+        });
+    </script>
+</body>
+
+</html>
